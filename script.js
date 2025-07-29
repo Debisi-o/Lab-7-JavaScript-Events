@@ -9,3 +9,10 @@ hoverBtn.addEventListener('mouseenter', () => {
 hoverBtn.addEventListener('mouseleave', () => {
     hoverMsg.textContent = "You left the button!";
 });
+// Keyboard Events
+const keyInput = document.getElementById('keyInput');
+const keyMsg = document.getElementById('keyMsg');
+
+keyInput.addEventListener('keydown', (e) => {
+    keyMsg.textContent = `You pressed: ${e.key}`;
+});
