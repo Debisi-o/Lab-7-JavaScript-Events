@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Event Handling Lab</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1>Event Handling Demo</h1>
+
+  <!-- Mouse Events -->
+  <section class="card">
+    <h2>Mouse Events</h2>
+    <button id="hoverBtn">Hover Over Me</button>
+    <p id="hoverMsg"></p>
+  </section>
+
+  <!-- Keyboard Events -->
+  <section class="card">
+    <h2>Keyboard Events</h2>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="keyMsg"></p>
+  </section>
+
+  <!-- Form Events -->
+  <section class="card">
+    <h2>Form Events</h2>
+    <form id="demoForm">
+      <input type="text" required placeholder="Enter something" />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- Focus & Blur Events -->
+  <section class="card">
+    <h2>Focus & Blur Events</h2>
+    <input type="text" id="focusInput" placeholder="Click here..." />
+    <p id="focusMsg"></p>
+  </section>
+
+  <!-- Event Delegation -->
+  <section class="card">
+    <h2>Event Delegation</h2>
+    <div id="btnContainer">
+      <button>One</button>
+      <button>Two</button>
+      <button>Three</button>
+    </div>
+    <p id="delegationMsg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
