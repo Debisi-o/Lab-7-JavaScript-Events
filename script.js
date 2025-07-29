@@ -24,3 +24,24 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     formMsg.textContent = "Form submitted successfully!";
 });
+// Focus and Blur Events
+const focusInput = document.getElementById('focusInput');
+const focusMsg = document.getElementById('focusMsg');
+
+focusInput.addEventListener('focus', () => {
+    focusMsg.textContent = "Input is focused!";
+});
+
+focusInput.addEventListener('blur', () => {
+    focusMsg.textContent = "Input lost focus!";
+});
+
+// Event Delegation
+const btnContainer = document.getElementById('btnContainer');
+const delegationMsg = document.getElementById('delegationMsg');
+
+btnContainer.addEventListener('click', (e) => {
+    if (e.target.tagName === "BUTTON") {
+        delegationMsg.textContent = `You clicked: ${e.target.textContent}`;
+    }
+});
